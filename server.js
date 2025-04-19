@@ -56,9 +56,9 @@ io.on("connection", (socket) => {
         const errorMessage = "Invalid ObjectId format";
         console.error(errorMessage);
         socket.emit("error", { message: errorMessage });
-        return;
+        return;  
       }
-  
+   
       const senderObjectId = new mongoose.Types.ObjectId(sender);
       const receiverObjectId = new mongoose.Types.ObjectId(receiver);
 
