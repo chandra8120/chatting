@@ -6,8 +6,8 @@ import dotenv from "dotenv";
 import path from "path";
 import cors from "cors";
 import { fileURLToPath } from "url";
-import Message from './models/user.model.js'
-import User from './message/message.router.js'
+import Message from './message/message.router.js'
+import User from './routers/user.router.js'
 import MessageRouter from './message/message.router.js'
 
 dotenv.config();
